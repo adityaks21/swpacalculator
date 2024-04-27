@@ -17,8 +17,8 @@ body {
 
 
 .container {
-    width: 600px;
-    margin: 50px 50px;
+    width: 500px;
+    margin: 10px 50px;
     padding: 20px;
     padding-right: 30px; /* Add space inside container on the right side */
     border: 1px solid #ccc;
