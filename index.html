@@ -7,45 +7,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container1">
-        <h1>SWP Calculator</h1>
-        <div class="input-container">
-            <label for="investmentAmount">Initial Investment Amount (₹)</label>
-            <input type="number" id="investmentAmount" min="0">
-        </div>
-        <div class="input-container">
-            <label for="withdrawalAmount">Monthly Withdrawal Amount (₹)</label>
-            <input type="number" id="withdrawalAmount" min="0">
-        </div>
-        <div class="input-container">
-            <label for="investmentPeriod">Investment Period (in years)</label>
-            <input type="number" id="investmentPeriod" min="0">
-        </div>
-        <div class="input-container">
-            <label for="annualInterestRate">Annual Interest Rate (%)</label>
-            <input type="number" id="annualInterestRate" min="0" step="0.01">
-        </div>
-        <button1 onclick="calculateSWP()">Calculate SWP</button1>
-        <div id="resultSWP"></div>
-    </div>
-    <div class="container2">
-        <h1>Loan Calculator</h1>
-        <div class="input-container">
-            <label for="loanAmount">Loan Amount (₹)</label>
-            <input type="number" id="loanAmount" min="0">
-        </div>
-        <div class="input-container">
-            <label for="interestRate">Interest Rate (%)</label>
-            <input type="number" id="interestRate" min="0" step="0.01">
-        </div>
-        <div class="input-container">
-            <label for="tenure">Loan Tenure (in years)</label>
-            <input type="number" id="tenure" min="0">
-        </div>
-        <button2 onclick="calculateEMI()">Calculate EMI</button2>
-        <div id="result">
-    </div>
+    <div id="main-div">
 
+        <div class="container1 container">
+            <h1>SWP Calculator</h1>
+            <div class="input-container">
+                <label for="investmentAmount">Initial Investment Amount (₹)</label>
+                <input type="number" id="investmentAmount" min="0">
+            </div>
+            <div class="input-container">
+                <label for="withdrawalAmount">Monthly Withdrawal Amount (₹)</label>
+                <input type="number" id="withdrawalAmount" min="0">
+            </div>
+            <div class="input-container">
+                <label for="investmentPeriod">Investment Period (in years)</label>
+                <input type="number" id="investmentPeriod" min="0">
+            </div>
+            <div class="input-container">
+                <label for="annualInterestRate">Annual Interest Rate (%)</label>
+                <input type="number" id="annualInterestRate" min="0" step="0.01">
+            </div>
+            <button1 onclick="calculateSWP()">Calculate SWP</button1>
+            <div id="resultSWP"></div>
+        </div>
+    
+        <div class="container2 container">
+            <h1>Loan Calculator</h1>
+            <div class="input-container">
+                <label for="loanAmount">Loan Amount (₹)</label>
+                <input type="number" id="loanAmount" min="0">
+            </div>
+            <div class="input-container">
+                <label for="interestRate">Interest Rate (%)</label>
+                <input type="number" id="interestRate" min="0" step="0.01">
+            </div>
+            <div class="input-container">
+                <label for="tenure">Loan Tenure (in years)</label>
+                <input type="number" id="tenure" min="0">
+            </div>
+            <button2 onclick="calculateEMI()">Calculate EMI</button2>
+            <div id="result">
+        </div>
+    
+    </div>
+   
     <script src="script.js"></script>
 </body>
 </html>
